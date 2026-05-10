@@ -6,49 +6,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RaiseTheBar | Home</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="bg-gray-50 text-gray-800">
+<body class="bg-black text-gray-800 text-white">
 
-    <nav class="bg-slate-900 text-white p-4 sticky top-0 z-50">
+    <nav class="bg-black p-4 sticky top-0 z-50">
         <div class="container mx-auto flex justify-between items-center">
             <h1 class="text-xl font-bold">Raise The Bar Co.</h1>
             <div class="space-x-6">
-                <a href="#" class="hover:text-blue-400">Home</a>
-                <a href="contact.html" class="bg-blue-600 px-4 py-2 rounded hover:bg-blue-700 transition">Get a
+                <a href="#" class="hover:text-[#bd9700]">Home</a>
+                <a href="contact.html" class="bg-[#bd9700] px-4 py-2 rounded hover:bg-[#9c7a00] transition">Get a
                     Quote</a>
             </div>
         </div>
     </nav>
 
-    <header class="bg-slate-800 text-white py-20 text-center">
+    <header class="py-20 text-center">
         <h2 class="text-4xl font-extrabold mb-4">Mobile bartending</h2>
         <p class="text-lg text-gray-300 mb-8 max-w-2xl mx-auto">We bring the bar, you bring the vibes</p>
-        <a href="contact.html"
-            class="bg-blue-600 text-white px-8 py-3 rounded-full font-bold text-lg hover:bg-blue-700">Request a
+        <a href="contact.html" class="bg-[#bd9700]  px-8 py-3 rounded-full font-bold text-lg hover:bg-[#9c7a00]">Request
+            a
             Quote</a>
     </header>
 
     <section class="container mx-auto py-16 px-4">
         <h3 class="text-3xl font-bold text-center mb-12">Our Services</h3>
-        <div class="grid md:grid-cols-3 gap-8">
-            <div class="bg-white p-6 rounded-lg shadow-md border-t-4 border-blue-600">
-                <h4 class="text-xl font-bold mb-2">Bar tending</h4>
-                <p class="text-gray-600">We will serve your drinks at your party.</p>
+        <div class="grid md:grid-cols-2 gap-8">
+            <div class="p-6 rounded-lg shadow-md border-t-4 border-[#bd9700]">
+                <h4 class="text-xl font-bold mb-2">Bartender - $50 per hour</h4>
+                <ul class="list-disc pl-6">
+                    <li> Experienced, certified bartenders</li>
+                    <li> All essential bar tools and service setup</li>
+                    <li> Mixing and serving cocktails, beer, and wine</li>
+                    <li> Garnishing and presentation</li>
+                    <li> Guest interaction and service with a polished, friendly approach</li>
+                    <li> Maintaining a clean and organized bar area</li>
+                    <li> Coordinating alcohol quantities and bar flow</li>
+
+
+                </ul>
             </div>
-            <div class="bg-white p-6 rounded-lg shadow-md border-t-4 border-blue-600">
-                <h4 class="text-xl font-bold mb-2">Custom cocktails</h4>
-                <p class="text-gray-600">Want something pink that tastes like guava and makes you feel in miami? You got
-                    it.</p>
-            </div>
-            <div class="bg-white p-6 rounded-lg shadow-md border-t-4 border-blue-600">
-                <h4 class="text-xl font-bold mb-2">Balls to the wall</h4>
-                <p class="text-gray-600">You just worry about having fun, we will take care of the rest.</p>
+            <div class="p-6 rounded-lg shadow-md border-t-4 border-[#bd9700]">
+                <h4 class="text-xl font-bold mb-2">Server - $30 per hour</h4>
+                <p>
+                    <li>Food service (plated, buffet, or family-style)</li>
+                    <li>Passing appetizers and canapés</li>
+                    <li>Table setting, clearing, and resetting</li>
+                    <li>Maintaining cleanliness of service areas throughout the event</li>
+                    <li>Coordinating with hosts, caterers, and vendors</li>
+                    <li>End-of-event cleanup of dining and service spaces</li>
+                </p>
             </div>
         </div>
     </section>
 
-    <section class="bg-gray-100 py-16">
+    <section class="py-16">
         <div class="container mx-auto px-4">
             <h3 class="text-3xl font-bold text-center mb-12">Meet the Team</h3>
             <div class="flex flex-wrap justify-center gap-12">
@@ -56,39 +69,57 @@
                     <div class="w-32 h-32 bg-gray-300 rounded-full mx-auto mb-4">
                         <img src="assets/AndreaAndPamela.jpeg">
                     </div>
-                    <p class="font-bold">Andrea and Pamela</p>
                     <!-- <p class="text-sm text-gray-500">CEO</p> -->
+                    <p class="font-bold">Andrea and Pamela</p>
+                    <p>
+                        We’re a mobile bartending duo with over 15 years of experience each — and we truly love what we
+                        do. From intimate
+                        house parties and lively clubs to beautiful weddings and professional corporate events, we’ve
+                        done it all.
+                        We bring a mix of skill, personality, and genuine passion to every event. Our goal is to make
+                        sure your guests
+                        have a great time, enjoy amazing drinks, and feel well taken care of. Whether you’re looking for
+                        classic
+                        cocktails, signature creations, or something spontaneous, we’re always up for the challenge —
+                        especially when
+                        someone says, “make me something fun!”
+                    </p>
                 </div>
             </div>
         </div>
     </section>
+    <div id="gigsalad-reviews-widget"></div>
+
+    <div class="text-center">
+        <script>var gsReviewWidget; (function (d, t) { var s = d.createElement(t), options = { path: '285137', maxWidth: 600, count: 3 }; s.src = 'https://www.gigsalad.com/js/gigsalad-reviews-widget.min.js'; s.onload = s.onreadystatechange = function () { var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; try { gsReviewWidget = new GsReviewsWidget(options); gsReviewWidget.display(); } catch (e) { } }; var scr = d.getElementsByTagName(t)[0]; var par = scr.parentNode; par.insertBefore(s, scr); })(document, 'script');</script>
+    </div>
 
     <section class="container mx-auto py-16 px-4 max-w-xl">
-        <div class="bg-white p-8 rounded-xl shadow-lg">
+        <div class="rounded-xl shadow-lg">
             <h2 class="text-3xl font-bold mb-6 text-center">Request a Quote</h2>
             <form action="https://formsubmit.co/bf15aa3c3a66245467adbd459ce568f5" method="POST" class="space-y-4">
                 <div>
-                    <label class="block text-sm font-medium text-gray-700">Name</label>
+                    <label class="block text-sm font-medium text-gray-200">Name</label>
                     <input name="name" type="text" placeholder="Full Name"
                         class="w-full p-3 border rounded-lg focus:ring-2 focus:ring-blue-500 outline-none" required>
                 </div>
                 <div>
-                    <label class="block text-sm font-medium text-gray-700">Email Address</label>
+                    <label class="block text-sm font-medium text-gray-200">Email Address</label>
                     <input name="email" type="email" placeholder="name@example.com"
                         class="w-full p-3 border rounded-lg focus:ring-2 focus:ring-blue-500 outline-none" required>
                 </div>
                 <div>
-                    <label class="block text-sm font-medium text-gray-700">Phone Number</label>
+                    <label class="block text-sm font-medium text-gray-200">Phone Number</label>
                     <input name="phone" type="tel" placeholder="4165550123"
                         class="w-full p-3 border rounded-lg focus:ring-2 focus:ring-blue-500 outline-none" required>
                 </div>
                 <div>
-                    <label class="block text-sm font-medium text-gray-700">Message</label>
+                    <label class="block text-sm font-medium text-gray-200">Message</label>
                     <textarea name="message" rows="4" placeholder="Tell us about your party..."
                         class="w-full p-3 border rounded-lg focus:ring-2 focus:ring-blue-500 outline-none"></textarea>
                 </div>
                 <button type="submit"
-                    class="w-full bg-blue-600 text-white font-bold py-3 rounded-lg hover:bg-blue-700 transition duration-300">
+                    class="w-full bg-[#bd9700]  font-bold py-3 rounded-lg hover:bg-[#9c7a00] text-gray-blue-700 transition duration-300">
                     Send
                 </button>
             </form>
