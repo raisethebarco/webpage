@@ -88,11 +88,11 @@
         </div>
     </section>
 
-    <div id="gigsalad-reviews-widget"></div>
-
-    <div class="text-center">
+    <!-- Centered GigSalad Review Section -->
+    <section class="container mx-auto px-4 my-12 flex justify-center items-center flex-col">
+        <div id="gigsalad-reviews-widget" class="w-full flex justify-center"></div>
         <script>var gsReviewWidget; (function (d, t) { var s = d.createElement(t), options = { path: '285137', maxWidth: 600, count: 3 }; s.src = 'https://www.gigsalad.com/js/gigsalad-reviews-widget.min.js'; s.onload = s.onreadystatechange = function () { var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; try { gsReviewWidget = new GsReviewsWidget(options); gsReviewWidget.display(); } catch (e) { } }; var scr = d.getElementsByTagName(t)[0]; var par = scr.parentNode; par.insertBefore(s, scr); })(document, 'script');</script>
-    </div>
+    </section>
 
     <section id="contact" class="container mx-auto py-16 px-4 max-w-xl">
         <div class="rounded-xl shadow-lg">
