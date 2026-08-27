@@ -14,12 +14,13 @@
     <nav class="bg-black p-4 sticky top-0 z-50">
         <div class="container mx-auto flex justify-between items-center">
             <h1 class="text-xl font-bold">Raise The Bar Co.</h1>
-            <div class="space-x-6">
+            <div class="flex items-center space-x-6">
                 <a href="#" class="hover:text-[#bd9700]">Home</a>
-                <a href="#contact" class="bg-[#bd9700] px-4 py-2 rounded hover:bg-[#9c7a00] transition">Get a
-                    Quote</a>
-                <a href="https://www.instagram.com/raisethebarco.to" target="_blank"><img
-                        src="assets/Instagram_icon.png" alt="Toronto/GTA Mobile Bartending" class="instagram-small"></a>
+                <a href="#contact" class="bg-[#bd9700] px-4 py-2 rounded hover:bg-[#9c7a00] transition">Get a Quote</a>
+                <a href="https://www.instagram.com/raisethebarco.to" target="_blank" class="flex items-center">
+                    <img src="assets/Instagram_icon.png" alt="Toronto/GTA Mobile Bartending"
+                        class="instagram-small h-6 w-6 object-contain">
+                </a>
             </div>
         </div>
     </nav>
@@ -27,8 +28,7 @@
     <header class="py-20 text-center">
         <h2 class="text-4xl font-extrabold mb-4">Mobile bartending</h2>
         <p class="text-lg text-gray-300 mb-8 max-w-2xl mx-auto">We bring the bar, you bring the vibes</p>
-        <a href="#contact" class="bg-[#bd9700]  px-8 py-3 rounded-full font-bold text-lg hover:bg-[#9c7a00]">Request
-            a
+        <a href="#contact" class="bg-[#bd9700] px-8 py-3 rounded-full font-bold text-lg hover:bg-[#9c7a00]">Request a
             Quote</a>
     </header>
 
@@ -37,28 +37,26 @@
         <div class="grid md:grid-cols-2 gap-8">
             <div class="p-6 rounded-lg shadow-md border-t-4 border-[#bd9700]">
                 <h4 class="text-xl font-bold mb-2">Bartender - $50 per hour</h4>
-                <ul class="list-disc pl-6">
-                    <li> Experienced, certified bartenders</li>
-                    <li> All essential bar tools and service setup</li>
-                    <li> Mixing and serving cocktails, beer, and wine</li>
-                    <li> Garnishing and presentation</li>
-                    <li> Guest interaction and service with a polished, friendly approach</li>
-                    <li> Maintaining a clean and organized bar area</li>
-                    <li> Coordinating alcohol quantities and bar flow</li>
-
-
+                <ul class="list-disc pl-6 space-y-1">
+                    <li>Experienced, certified bartenders</li>
+                    <li>All essential bar tools and service setup</li>
+                    <li>Mixing and serving cocktails, beer, and wine</li>
+                    <li>Garnishing and presentation</li>
+                    <li>Guest interaction and service with a polished, friendly approach</li>
+                    <li>Maintaining a clean and organized bar area</li>
+                    <li>Coordinating alcohol quantities and bar flow</li>
                 </ul>
             </div>
             <div class="p-6 rounded-lg shadow-md border-t-4 border-[#bd9700]">
                 <h4 class="text-xl font-bold mb-2">Server - $30 per hour</h4>
-                <p>
+                <ul class="list-disc pl-6 space-y-1">
                     <li>Food service (plated, buffet, or family-style)</li>
                     <li>Passing appetizers and canapés</li>
                     <li>Table setting, clearing, and resetting</li>
                     <li>Maintaining cleanliness of service areas throughout the event</li>
                     <li>Coordinating with hosts, caterers, and vendors</li>
                     <li>End-of-event cleanup of dining and service spaces</li>
-                </p>
+                </ul>
             </div>
         </div>
     </section>
@@ -67,29 +65,29 @@
         <div class="container mx-auto px-4">
             <h3 class="text-3xl font-bold text-center mb-12">Meet the Team</h3>
             <div class="flex flex-wrap justify-center gap-12">
-                <div class="text-center">
-                    <div class="w-32 h-32 bg-gray-300 rounded-full mx-auto mb-4">
-                        <img src="assets/AndreaAndPamela.jpeg">
+                <div class="text-center max-w-xl">
+                    <div class="w-32 h-32 rounded-full mx-auto mb-4 overflow-hidden">
+                        <img src="assets/AndreaAndPamela.jpeg" alt="Andrea and Pamela"
+                            class="w-full h-full object-cover">
                     </div>
-                    <!-- <p class="text-sm text-gray-500">CEO</p> -->
-                    <p class="font-bold">Andrea and Pamela</p>
-                    <p>
+                    <p class="font-bold text-xl mb-2">Andrea and Pamela</p>
+                    <p class="text-gray-300 leading-relaxed">
                         We’re a mobile bartending duo with over 15 years of experience each — and we truly love what we
-                        do. From intimate
-                        house parties and lively clubs to beautiful weddings and professional corporate events, we’ve
-                        done it all.
-                        We bring a mix of skill, personality, and genuine passion to every event. Our goal is to make
-                        sure your guests
-                        have a great time, enjoy amazing drinks, and feel well taken care of. Whether you’re looking for
-                        classic
-                        cocktails, signature creations, or something spontaneous, we’re always up for the challenge —
-                        especially when
-                        someone says, “make me something fun!”
+                        do. From intimate house parties and lively clubs to beautiful weddings and professional
+                        corporate events, we’ve
+                        done it all. We bring a mix of skill, personality, and genuine passion to every event. Our goal
+                        is to make
+                        sure your guests have a great time, enjoy amazing drinks, and feel well taken care of. Whether
+                        you’re looking for
+                        classic cocktails, signature creations, or something spontaneous, we’re always up for the
+                        challenge —
+                        especially when someone says, “make me something fun!”
                     </p>
                 </div>
             </div>
         </div>
     </section>
+
     <div id="gigsalad-reviews-widget"></div>
 
     <div class="text-center">
@@ -124,7 +122,7 @@
                         class="w-full p-3 border rounded-lg focus:ring-2 focus:ring-[#bd9700] outline-none text-black"></textarea>
                 </div>
                 <button type="submit"
-                    class="w-full bg-[#bd9700]  font-bold py-3 rounded-lg hover:bg-[#9c7a00] text-gray-200 transition duration-300">
+                    class="w-full bg-[#bd9700] font-bold py-3 rounded-lg hover:bg-[#9c7a00] text-gray-200 transition duration-300">
                     Send
                 </button>
             </form>
@@ -134,8 +132,3 @@
 </body>
 
 </html>
-
-
-<!-- 
-andrea's website layout (team pictures caroussel) -> services -> reviews -> contact form 
--->
